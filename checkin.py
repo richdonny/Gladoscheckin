@@ -21,7 +21,7 @@ if __name__ == '__main__':
     if cookies[0] != "":
 
         check_in_url = "https://glados.cloud/console/checkin"        # 签到地址
-        status_url = "https://glados.cloud/api/user/status"          # 查看账户状态
+        status_url = "https://glados.rocks/api/user/status"          # 查看账户状态
 
         referer = 'https://glados.cloud/console/checkin'
         origin = "https://glados.cloud"
@@ -95,6 +95,7 @@ if __name__ == '__main__':
     else:
         pushdeer = PushDeer(pushkey=sckey) 
         pushdeer.send_text(title, desp=context)
+
 
 
 
